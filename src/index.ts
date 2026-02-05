@@ -49,7 +49,7 @@ app.patch('/books/:id', (req: Request, res: Response) => {
     book.title = title || book.title;
     book.author = author || book.author;
     book.description = description || book.description;
-    book.year = year || book.year;
+    book.year = year ? Number(year) : book.year;
     res.status(200).json(book);
 });
 app.delete('/books/:id', (req: Request, res: Response) => {
