@@ -28,6 +28,6 @@ export const books: Book[] = [
         year: 1925
     }
 ];// read-only
-export let nextId = 4;
+
 // re-assigned
 
